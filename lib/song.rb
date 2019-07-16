@@ -30,6 +30,7 @@ class Song
   end
   
   def self.find_by_name(title)
+    if Song.all.any? 
     Song.all.each do |song|
       if song.name == title
         return song
