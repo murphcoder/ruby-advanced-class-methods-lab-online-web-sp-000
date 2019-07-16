@@ -37,7 +37,7 @@ class Song
         end
       end
     else
-      false
+      nil
     end
   end
   
