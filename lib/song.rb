@@ -57,8 +57,8 @@ class Song
     file.delete_suffix!(".mp3")
     file_array = file.split(" - ")
     mp3 = Song.new
-    mp3.name = file_array[0]
-    mp3.artist_name = file_array[1]
+    mp3.artist_name = file_array[0]
+    mp3.name = file_array[1]
     mp3
   end
 
