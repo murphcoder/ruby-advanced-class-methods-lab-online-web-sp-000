@@ -66,5 +66,9 @@ class Song
     mp3 = Song.new_from_filename(file)
     Song.all << mp3
   end
+  
+  def self.destroy_all
+    Song.all.clear
+  end
 
 end
