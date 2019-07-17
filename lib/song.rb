@@ -61,5 +61,10 @@ class Song
     mp3.name = file_array[1]
     mp3
   end
+  
+  def self.create_from_filename(file)
+    mp3 = Song.new_from_filename(file)
+    Song.all << mp3
+  end
 
 end
