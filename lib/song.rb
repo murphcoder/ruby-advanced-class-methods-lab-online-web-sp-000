@@ -55,7 +55,7 @@ class Song
   
   def self.new_from_filename(file)
     file_array = file.split (" - ")
-    
+    file_array[1].delete_suffix! 
   end
 
 end
