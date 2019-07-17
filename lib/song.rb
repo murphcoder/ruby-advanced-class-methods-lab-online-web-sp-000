@@ -52,5 +52,9 @@ class Song
   def self.alphabetical
     Song.all.sort_by {|title| title.name}
   end
+  
+  def self.new_from_filename(file)
+    file_array = 
+  end
 
 end
